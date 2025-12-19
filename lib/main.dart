@@ -1,6 +1,6 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'api_keys.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -55,13 +55,8 @@ class _CalculatorPageState extends State<CalculatorPage> {
   InterstitialAd? _interstitialAd;
 
   // Test IDs provided by user
-  final String _bannerAdUnitId = Platform.isAndroid
-      ? 'ca-app-pub-3139392062864830/8040306305'
-      : 'ca-app-pub-3139392062864830/8040306305'; // iOS Test ID fallback
-
-  final String _interstitialAdUnitId = Platform.isAndroid
-      ? 'ca-app-pub-3139392062864830/8997971239'
-      : 'ca-app-pub-3139392062864830/8997971239'; // iOS Test ID fallback
+  final String _bannerAdUnitId = adIdBanner;
+  final String _interstitialAdUnitId = adIdIntersticial;
 
   @override
   void initState() {
