@@ -4,12 +4,6 @@ Resumo
 - Aplicativo Flutter simples para calcular custos de um churrasco (participantes, carnes, bebidas, divisão de conta).
 - Projeto ideal para apresentar em entrevistas: demonstra fluxo de UI, gestão de estado, boas práticas de organização de pastas e testes básicos.
 
-Por que este projeto em uma entrevista
-- Mostra conhecimento prático de Flutter (widget composition, navegação, formulários, validação).
-- Permite discutir decisões de arquitetura (pastas, separação de UI / lógica / modelos).
-- Permite demonstrar habilidade com gerenciamento de estado, tratamento de entrada assíncrona e testes.
-- Fácil de estender com features que podem ser pedidas durante a entrevista (persistência, internacionalização, integração com APIs).
-
 Tecnologias
 - Flutter (Dart)
 - Estrutura básica de pastas: lib/, test/, assets/, pubspec.yaml
@@ -51,17 +45,8 @@ Pontos técnicos para discutir
 - Acessibilidade e internacionalização (i18n) — como adicionar.
 - Possíveis melhorias: persistência local (SharedPreferences / Hive), exportar resultado (PDF / compartilhar), integração com backend para salvar eventos.
 
-Possíveis perguntas da entrevista e respostas curtas
-- Como garantir precisão dos cálculos? — Cobrir com testes unitários e tratamento consistente de tipos numéricos (double/decimal) e formatação local.
-- Como escalar a UI para mais itens? — Componentizar item list, usar lazy loading e manter widgets pequenos e testáveis.
-- Como tratar erros de entrada? — Validação no frontend + testes; considerar validação adicional no backend se houver.
-
 Melhorias futuras (roadmap rápido)
 - Suporte a múltiplos eventos salvos.
 - Persistência local e sincronização com nuvem.
 - Perfil de usuários e histórico.
 - Exportar/compartilhar resultados.
-
-Observações finais
-- Código simples e focado em demonstrar fundamentos do desenvolvimento Flutter e boas práticas de engenharia. Preparar uma demo ao vivo destacando os pontos listados e mostrando testes e análise estática funcionando.
-
